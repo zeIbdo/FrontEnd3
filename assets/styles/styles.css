@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.mainbox {
+    background-color: blue;
+    padding: 30px;
+    margin: 45px;
+    border-radius: 10px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+h1 {
+    padding-bottom: 25px;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button#addTask {
+    background-color: #f34242;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121369;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: white;
+    max-height: 200px; 
+    overflow-y: auto; 
+
+}
+li {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+button.deleteBtn {
+    background-color: #f7ca4c;
+    color: rgba(64, 56, 56, 0.946);
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button#clearAll{
+    background-color: #f74ccf;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+button#addTask:hover, button.deleteBtn:hover, button#clearAll:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+button#addTask:active, button.deleteBtn:active, button#clearAll:active {
+    transform: scale(0.95);
+}
